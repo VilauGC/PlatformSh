@@ -13,7 +13,7 @@ public class DataSourceConfig {
     @Bean(name="dataSource")
     public DataSource getDataSource(){
         Config config = new Config();
-        MySQL database = config.getCredential("database", MySQL::new);
+        MySQL database = config.getCredential("db", MySQL::new);
         return database.get();
     }
 
