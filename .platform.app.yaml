@@ -27,4 +27,4 @@ relationships:
 web:
   commands:
     # TODO: DE MODIFICAT NUMELE JAR-ULUI.
-    start: java -jar $JAVA_OPTS target/PlatformSh.jar --server.port=$PORT
+    start: java -jar $JAVA_OPTS target/platformsh.jar --server.port=$PORT
