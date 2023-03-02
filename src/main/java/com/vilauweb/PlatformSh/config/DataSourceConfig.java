@@ -12,16 +12,11 @@ import javax.sql.DataSource;
 @Slf4j
 public class DataSourceConfig {
 
-    @Bean(name="dataSource")
-    public DataSource getDataSource(){
+    @Bean(name = "dataSource")
+    public DataSource getDataSource() {
+        log.error("A INTRAT PE AICI!**********************************************");
         Config config = new Config();
         MySQL database = config.getCredential("database", MySQL::new);
-
-        log.info("**************** VGC-The path is: {}", database.getPath());
-        log.info("**************** VGC-The username is: {}", database.getUserName());
-        log.info("**************** VGC-The port is: {}", database.getPort());
-        log.info("**************** VGC-The host is: {}", database.getHost());
-
         return database.get();
     }
 
