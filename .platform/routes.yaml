@@ -5,7 +5,7 @@
 
 "https://{default}/":
   type: upstream
-  upstream: "app:http"
+  upstream: "platformsh:http"
 
 "https://www.{default}/":
   type: redirect
